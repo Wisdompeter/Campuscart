@@ -1,0 +1,334 @@
+
+    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #0F0E0E !important;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.nav-sec {
+    margin: 20px 50px;
+    padding: 8px;
+    border-radius: 19px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+   
+
+}
+
+
+.cart {
+    font-size: 30px;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 40px;
+    padding: 8px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.middle-links {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.third-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+}
+
+.third-link input {
+    width: 260px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#id-menu {
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    right: -500px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 2px;
+    z-index: 999;
+    transition: right 0.8s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.side-menu.active {
+    right: 0px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.cart-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin: 20px;
+}
+
+.cart-icon:hover {
+  color: gold;
+}
+
+.testimonial-head::after {
+    content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #eed111, #6c5ce7);
+            margin: 10px auto;
+            border-radius: 2px;
+}
+
+   .card-hero {
+      background: rgba(255, 255, 255, 0.1) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+     .card-product {
+      background: #0F0E0E !important;
+      border: 1px solid #333;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-skew {
+        transition: 0.5s ease;
+    }
+
+      .card-skew:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    }
+
+
+.image-container {
+  width: 100%;
+  height: 250px; /* fix this height for consistency */
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image fills evenly without distortion */
+}
+
+.student-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+            border: 2px solid black;
+            border: 2px solid white !important;
+}
+
+ .seller-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(26, 115, 232, 0.3);
+            border: 2px solid red;
+        }
+
+          .seller-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+        }
+
+        /*** asdfghjkl**/
+        
+        .stats-container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            margin: 40px 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px 15px;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: black;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+          @media (max-width: 768px) {
+            .seller-section {
+                padding: 50px 0;
+            }
+            
+            
+            .seller-cta {
+                padding: 30px 20px;
+            }
+        }
+
+        @media(max-width: 1062px) {
+
+               .stat-number {
+                font-size: 22px;
+            }
+
+        }
+        
+
+
+@media (max-width: 951px) {
+    .middle-links {
+        display: none;
+    }
+
+    .dp{
+        width: 30px;
+        height: 30px;
+    }
+
+    #id-menu {
+        display: block;
+    }
+
+  .third-link input {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+      .hero {
+    margin-top: 110px; /* push hero down by roughly search height */
+  }
+
+}
+
+@media (max-width: 777px) {
+
+    .third-link {
+        gap: 1px;
+    }
+
+    .cart {
+        font-size: 25px;
+    }
+
+    .nav-sec {
+        margin: 10px;
+    }
+
+    .cart-logo {
+    display: none;
+}
+
+}
+
+@media (max-width: 860px) {
+    .btn-product {
+        width: 50%;
+    }
+
+   
+}
+
+@media (max-width: 640px) {
+    .card-product {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .block-footer {
+        display: none ;
+    }
+}
+
