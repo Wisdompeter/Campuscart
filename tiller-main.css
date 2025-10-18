@@ -791,7 +791,7 @@
     }
 
     .stat-number {
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 800;
       background: var(--primary-gradient);
       -webkit-background-clip: text;
@@ -884,7 +884,7 @@
     }
 
     /* Responsive Design */
-    @media (max-width: 991px) {
+    @media (max-width: 1050px) {
       .nav-links {
         display: none;
       }
@@ -906,9 +906,19 @@
       }
     }
 
+            @media (max-width: 555px) {
+      .stat-number {
+        font-size: 20px;
+      }
+      .stat-item {
+        padding: 0;
+      }
+      }
+
     @media (max-width: 900px) {
       .stat-number {
         font-size: 20px;
+        color: red;
       }
       .stat-item {
         padding: 0;
@@ -948,14 +958,6 @@
 
       .hero-description {
         font-size: 16px;
-      }
-
-      .section-title {
-        font-size: 32px;
-      }
-
-      .stat-number {
-        font-size: 32px;
       }
 
       .newsletter-form {
