@@ -159,6 +159,11 @@
       cursor: pointer;
     }
 
+     .cart-quantity {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+      }
+
     .icon-button {
       width: 45px;
       height: 45px;
@@ -171,7 +176,8 @@
       color: var(--text-on-dark);
       cursor: pointer;
       transition: all 0.3s ease;
-      font-size: 18px;
+      padding: 28px;
+    
     }
 
     .icon-button:hover {
@@ -528,6 +534,17 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       margin-bottom: 20px;
+    }
+
+    .minus-btn, .add-btn {
+      width: 50px;
+      background: var(--primary-gradient);
+      font-size: 20px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      color: #ffffff;
+    
     }
 
     .add-to-cart-button {
@@ -982,5 +999,11 @@
         width: 40px;
         height: 40px;
         font-size: 16px;
+      }
+
+      .icon-button {
+        padding: 30px;
+        width: 0;
+        font-size: 24px;
       }
     }
