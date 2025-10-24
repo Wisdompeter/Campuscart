@@ -112,6 +112,10 @@
       width: 100%;
     }
 
+    .nav-logo {
+      width: 60px;
+    }
+
     .nav-actions {
       display: flex;
       align-items: center;
@@ -912,6 +916,9 @@
       }
       .stat-item {
         padding: 0;
+      }
+      .logo-name {
+        display: none;
       }
       }
 
