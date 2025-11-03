@@ -124,6 +124,7 @@
 
     .search-bar {
       position: relative;
+      
     }
 
     .search-input {
@@ -132,9 +133,10 @@
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-color);
       border-radius: 25px;
-      color: var(--text-primary);
+      color: var(--text-on-dark);
       font-size: 14px;
       transition: all 0.3s ease;
+    
     }
 
     .search-input:focus {
@@ -159,14 +161,18 @@
       cursor: pointer;
     }
 
+    .down-search {
+      display: none;
+    }
+
      .cart-quantity {
         font-size: 1.3rem;
         margin-bottom: 20px;
       }
 
     .icon-button {
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-color);
       border-radius: 50%;
@@ -961,6 +967,14 @@
 
       .search-input {
         width: 100%;
+      }
+
+      .top-search {
+        display: none;
+      }
+
+      .down-search {
+        display: block;
       }
 
       .hero-section {
